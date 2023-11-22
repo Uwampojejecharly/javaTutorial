@@ -1,6 +1,6 @@
-package fr.charly.programme;
+package fr.charly.javaTurorial;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		
