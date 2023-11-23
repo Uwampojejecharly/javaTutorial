@@ -1,4 +1,4 @@
-package fr.charly.javaTurorial;
+package fr.charly.javaTutorial;
 
 public class Main {
 
