@@ -1,22 +1,20 @@
 package fr.charly.javaTutorial;
 
-public class PineApple extends Fruit implements PeelFruit {
+public class Kiwi extends Fruit implements PeelFruit {
 
-	private boolean peeled = false;
-
-	public PineApple() {
-		super("ananas");
+	public Kiwi(String name) {
+		super("fruit");
 	}
 
 	@Override
 	public void taste() {
-		System.out.println("L'ananas a un goût un peut acide");
+		System.out.println("le goût est plutôt sucré miam miam");
 
 	}
 
 	@Override
 	public int getSize() {
-		return 2;
+		return 1;
 	}
 
 	@Override
@@ -26,12 +24,12 @@ public class PineApple extends Fruit implements PeelFruit {
 
 	@Override
 	public boolean isPeeled() {
-		return peeled;
+		return true;
 	}
 
 	@Override
 	public String getSkinType() {
-		return "piquante";
+		return "doux";
 	}
 
 }
