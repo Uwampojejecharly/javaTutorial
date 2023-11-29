@@ -1,14 +1,14 @@
 package fr.charly.javaTutorial;
 
-class Apple extends Fruit {
-	
+class Apple extends Fruit implements PeelFruit {
+
 	public Apple() {
 		super("pomme");
 	}
 
 	@Override
 	public void taste() {
-		System.out.println("La pomme a un goût plutot sucré");
+		System.out.println("La pomme a un goût plutôt sucré");
 	}
 
 	@Override
@@ -17,8 +17,18 @@ class Apple extends Fruit {
 	}
 
 	@Override
-	public boolean hasSeed(){
+	public boolean hasSeed() {
 		return true;
 	}
- 
+
+	@Override
+	public boolean isPeeled() {
+		return false;
+	}
+
+	@Override
+	public String getSkinType() {
+		return "lisse";
+	}
+
 }
